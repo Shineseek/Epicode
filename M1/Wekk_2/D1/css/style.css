@@ -1,0 +1,60 @@
+#card{
+    width: 500px;
+    height: 700px;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+#card img {
+    width: 100%;
+    height: 100%;
+    transition: filter 0.3s ease
+}
+
+#card img:hover {filter: brightness(70%);}
+
+#save_button {
+    position: absolute;
+    width: 150px;
+    height: 80px;
+    border-radius: 60px;
+    right: 3%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    transform: translateY(-150%);
+    transition: transform 0.3s ease-in-out;
+}
+
+#card:hover #save_button {transform: translateY(5%);}
+
+#button_bar {
+    position: absolute;
+    text-align: center;
+    bottom: 2%;
+    height: 70px;
+    width: 100%;
+    transform: translateY(150%);
+    transition: trasform 1.3s ease-in-out;
+    vertical-align: middle;
+}
+
+#card:hover #button_bar {transform: translateY(2%);}
+
+#button_bar button {
+    height: 70px;
+    width: 300px;
+    border-radius: 60px;
+    
+}
+
+#button_bar button:not(:first-child) {
+    height: 70px;
+    width: 70px;
+    padding: 26px;
+    border-radius: 60px;
+    
+}

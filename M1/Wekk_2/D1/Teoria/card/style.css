@@ -1,0 +1,29 @@
+#card {
+    width: 450px;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 8px #111;
+    transition: box-shadow 1.5s linear;
+    position: relative;
+}
+
+#card:hover {box-shadow: 0 0 25px #111;}
+
+#card img {
+    width: 100%;
+    height: 100%;
+}
+
+#testo {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    transition: left 0.5s linear;
+}
+
+#card:hover #testo {left: 120%;}

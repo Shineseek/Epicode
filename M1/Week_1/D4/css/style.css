@@ -1,0 +1,108 @@
+html{
+    background-color: #f8f8f8;
+}
+
+main{
+    margin: 20px;
+}
+
+.logo_header{
+    background-color: #131921;
+    height: 60px;
+    margin: 0 auto;
+    padding-bottom: 0;
+}
+
+.logo_header img{
+    height: 40px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+header nav{
+    background-color: #232F3E;
+    color: white;
+
+}
+
+header nav ul{
+    margin: 0 auto;
+    height: 30px;
+}
+
+header nav li{
+    display: inline-block;
+    padding: 10px;
+}
+
+.band_card{
+    background-color: rgb(249, 111, 25);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.band_card p{
+    color: white;
+    
+}
+
+.title_page{
+    display: flex;
+    height: 200px;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_page h1{
+    position: absolute;
+    color: white;
+
+
+}
+
+.title_page h3{
+    position: absolute;
+    color: white;
+    padding-top: 100px;
+}
+.title_page img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.multi_object{
+    margin: 0 auto;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    align-items: center;
+
+}
+
+.multi_object p{
+    display: block;
+
+}
+
+
+.multi_object img{
+    width: 23%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.categoria{
+    margin: 0 auto;
+    height: 450px;
+    object-fit: cover;
+
+}
