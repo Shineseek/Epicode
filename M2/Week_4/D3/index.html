@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolcatrice</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div id="calcolatrice">
+
+        <div id="schermo">
+            <input type="button" name="risultato" id="risultato">
+        </div>
+
+        <div id="pulsanti">
+            <input type="button" id="7" value="7" onclick="immissione('7')">
+            <input type="button" id="8" value="8" onclick="immissione('8')">
+            <input type="button" id="9" value="9" onclick="immissione('9')">
+            <input type="button" id="*" value="*" class="operatore" onclick="immissione('*')">
+            <input type="button" id="4" value="4" onclick="immissione('4')">
+            <input type="button" id="5" value="5" onclick="immissione('5')">
+            <input type="button" id="6" value="6" onclick="immissione('6')">
+            <input type="button" id="-" value="-" class="operatore" onclick="immissione('-')">
+            <input type="button" id="1" value="1" onclick="immissione('1')">
+            <input type="button" id="2" value="2" onclick="immissione('2')">
+            <input type="button" id="3" value="3" onclick="immissione('3')">
+            <input type="button" id="+" value="+" class="operatore" onclick="immissione('+')">
+            <input type="button" id="C" value="C" class="operatore" onclick="resetta()">
+            <input type="button" id="0" value="0" onclick="immissione('0')">
+            <input type="button" id="=" value="=" class="operatore" onclick="operazione()">
+            <input type="button" id="/" value="/" class="operatore" onclick="immissione('/')">
+        </div>
+
+    </div>
+    
+    <script src="https://cdnjs.com/libraries/mathjs"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

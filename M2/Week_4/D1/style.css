@@ -1,0 +1,144 @@
+* {box-sizing: border-box;}
+
+body {
+    background-color: rgb(20,20,23);
+    display: flex;
+    justify-content: center;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+main {
+    width: 90%;
+    align-items: center;
+    text-align: center;
+
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+header p {
+    color: rgb(94,234,212);
+    font-weight: bold;
+}
+
+header h3 {
+    color: rgb(135,137,146);
+}
+
+
+
+#searchBox {
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(41,42,49);
+    background-color: rgb(30,31,36);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;   /* bottone allineato agli input */
+    gap: 1rem;               /* spazi tra gli elementi, al posto dei margin */
+}
+
+
+
+.searchInput {
+    flex: 1 1 240px;         
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    text-align: start;
+}
+
+.searchInput input {
+    width: 100%;             
+    height: 48px;
+    padding: 0 1rem;         
+    border: 1px solid rgb(52,54,62);
+    border-radius: 10px;
+    background-color: rgb(20,20,23);
+    color: white;
+    font-size: 1rem;
+}
+
+.searchInput p {
+    margin: 0;
+    color: rgb(176,176,176);
+}
+
+.searchInput input::placeholder {
+    color: rgb(138,141,151);
+}
+
+
+#btn {
+    flex: 0 1 160px;
+    height: 48px;            /* stessa altezza degli input */
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(94,234,212);
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#titleSite {
+    color: white;
+    text-align: center;
+}
+
+#lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+#lista li {
+    background-color: rgb(30,31,36);
+    border: 1px solid rgb(44,46,53);
+    border-radius: 14px;
+    padding: 1.25rem;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.9rem;
+}
+
+#lista .jobTitle {
+    margin: 0;
+    color: white;
+    font-size: 1rem;
+}
+
+#lista .jobLocation {
+    margin: 0;
+    color: rgb(161,164,174);
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+#count {
+    display: flex;
+    justify-content: space-between;  
+    align-items: baseline;
+    flex-wrap: wrap;                 
+    gap: 0.5rem;
+    margin: 2rem 0 1.25rem;
+    text-align: start;
+}
+
+#count .countFound {
+    color: white;
+    font-size: 1.3rem;
+}
+
+#count .countTotal {
+    color: rgb(161,164,174);
+    font-size: 0.9rem;
+    font-weight: normal;
+}

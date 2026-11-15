@@ -1,0 +1,41 @@
+* {box-sizing: border-box;}
+
+body {
+    font-size: 1.7em;
+}
+
+#calcolatrice {
+    border: 5px solid black;
+    width: 350px;
+    margin: 50px auto
+}
+
+#schermo {
+    background-color: yellow;
+}
+
+#risultato {
+    font-size: 1.7em;
+    width: 100%;
+    background-color: beige;
+    text-align: end;
+
+
+}
+
+#pulsanti {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: greenyellow;
+}
+
+#pulsanti > input {
+    width: 25%;
+    font-size: 1.7em;
+    text-align: center;
+
+}
+
+.operatore {
+  background-color: rgb(136, 235, 142);
+}
